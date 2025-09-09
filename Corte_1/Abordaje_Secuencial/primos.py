@@ -20,3 +20,40 @@ while a == 1:
 
     print('¿Quieres continuar? Presiona 1 para continuar o cualquier otro número para salir')
     a = int(input())
+
+#codigo experimental 
+"""
+a = 1
+
+while a == 1:
+    try:
+        entrada = input('Ingrese un número: ')
+
+        if "." in entrada:
+            print("Por favor ingrese solo números enteros\n")
+            continue
+
+        if not entrada.lstrip("-").isdigit():
+            print("Por favor ingrese solo números\n")
+            continue
+
+        value = int(entrada)
+        conta = 0
+
+        for n in range(1, value + 1):
+            residue = value % n
+            if residue == 0:
+                conta = conta + 1
+
+        if conta == 2:
+            print(f'{value} es un primo\n')
+        else:
+            print(f'{value} NO es un primo\n')
+
+        print('¿Quieres continuar? Presiona 1 para continuar o cualquier otro número para salir')
+        a = int(input())
+
+    except KeyboardInterrupt:
+        print("\nPrograma finalizado por el usuario.")
+        break
+"""
